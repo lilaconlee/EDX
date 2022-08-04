@@ -10,11 +10,14 @@
     "format": "prettier --write .",
     "check-types": "npm run check-types:astro && npm run check-types:typescript",
     "check-types:astro": "astro check",
-    "check-types:typescript": "tsc --noEmit"
+    "check-types:typescript": "tsc --noEmit",
+    "test": "npm run test:e2e",
+    "test:e2e": "cypress run" 
   },
   "devDependencies": {
     "@types/list.js": "^2.3.1",
     "astro": "^1.0.0-rc.1",
+    "cypress": "^10.4.0",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.1.1",
     "sass": "^1.54.0"
