@@ -81,6 +81,29 @@
 
   <link rel="stylesheet" href="../../../vendor/uswds/css/uswds.min.css" type="text/css" />
   <script src="../../../vendor/uswds/js/uswds-init.min.js"></script>
+
+  <style>
+    * {
+      font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
+    }
+
+    .usa-header a {
+      text-decoration: none !important;
+    }
+
+    body,
+    p,
+    li,
+    .headertext,
+    .globaltext,
+    .bigred {
+      font-size: 100%;
+    }
+
+    .usa-identifier p {
+      color: inherit;
+    }
+  </style>
 </head>
 
 <body>
@@ -159,27 +182,48 @@
                 </div>
               </section>
 
+              <div class="usa-overlay"></div>
+              <header class="usa-header usa-header--basic margin-bottom-1">
+                <div class="usa-nav-container">
+                  <div class="usa-navbar">
+                    <div class="usa-logo" id="-logo">
+                      <em class="usa-logo__text"><a href="/" style="color: inherit">USMC ServMart</a></em>
+                    </div>
+                    <button type="button" class="usa-menu-btn">Menu</button>
+                  </div>
+                  <nav aria-label="Primary navigation" class="usa-nav">
+                    <button type="button" class="usa-nav__close">
+                      <img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+                    </button>
+                    <ul class="usa-nav__primary usa-accordion">
+                      <li class="usa-nav__primary-item">
+                        <a href="" class="usa-nav-link"><span>Register</span></a>
+                      </li>
+                      <li class="usa-nav__primary-item">
+                        <a href="" class="usa-nav-link"><span>Log in</span></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </header>
+
               <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td bgcolor="#cc0000">
-                    <div style="margin-left: 10px; margin-top: 10px; margin-right: 0px; border: 1px solid white;">
+                  <td>
+                    <div class="grid-container">
                       <table border="0" cellspacing="0" cellpadding="0">
                         <tr valign="top">
-                          <td><img src="../usmcservmart_files/memorial.gif" alt="USMC Memorial" width="179" height="266"
-                              border="0"></td>
                           <td bgcolor="#FFFFFF">
                             <table border="0" cellspacing="0" cellpadding="0">
                               <tr>
                                 <td style="height: 80vh; vertical-align: top;">
-                                  <div style="margin-left: 20px;">
+                                  <div>
                                     <app-usmc-login-content class="ng-star-inserted">
                                       <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                           <tr>
-                                            <td><img height="1" src="../usmcservmart_files/pixel.gif" width="18"
-                                                border="0"></td>
                                             <td valign="top">
-                                              <table cellspacing="0" cellpadding="4" border="0">
+                                              <table cellspacing="0" border="0">
                                                 <tbody>
                                                   <tr>
                                                     <td class="globaltext">
@@ -198,8 +242,9 @@
                                                         peripherals, and tools and hardware for requisition-based
                                                         ordering. </p>
                                                     </td>
-                                                    <td><img height="202" src="../usmcservmart_files/GRSCLogo.JPG"
-                                                        width="362" border="0"></td><br>
+                                                    <td width="362"><img height="202"
+                                                        src="../usmcservmart_files/GRSCLogo.JPG" width="362" border="0">
+                                                    </td><br>
                                                     <td><img height="10" src="../usmcservmart_files/pixel.gif"
                                                         width="10" border="0"></td>
                                                   </tr>
@@ -438,7 +483,109 @@
                     </div>
                   </td>
                 </tr>
-              </table><br><br>
+              </table>
+
+              <footer class="usa-footer usa-footer--slim">
+                <div class="grid-container usa-footer__return-to-top">
+                  <a href="#">Return to top</a>
+                </div>
+                <div class="usa-footer__primary-section">
+                  <div class="usa-footer__primary-container grid-row">
+                    <div class="mobile-lg:grid-col-8">
+                      <nav class="usa-footer__nav" aria-label="Footer navigation,">
+                        <ul class="grid-row grid-gap">
+                          <li class="
+                              mobile-lg:grid-col-6
+                              desktop:grid-col-auto
+                              usa-footer__primary-content
+                            ">
+                            <a class="usa-footer__primary-link" href="javascript:void(0);">About USMC ServMart</a>
+                          </li>
+                          <li class="
+                              mobile-lg:grid-col-6
+                              desktop:grid-col-auto
+                              usa-footer__primary-content
+                            ">
+                            <a class="usa-footer__primary-link" href="javascript:void(0);">Leave a comment</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="mobile-lg:grid-col-4">
+                      <address class="usa-footer__address">
+                        <div class="grid-row grid-gap">
+                          <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                            <div class="usa-footer__contact-info">
+                              <a href="tel:1-866-370-8894">1 (866) 370-8894</a>
+                            </div>
+                          </div>
+                          <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                            <div class="usa-footer__contact-info">
+                              <a href="#">Help and FAQ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+              <div class="usa-identifier">
+                <section class="usa-identifier__section usa-identifier__section--masthead"
+                  aria-label="Agency identifier">
+                  <div class="usa-identifier__container">
+                    <div class="usa-identifier__logos">
+                      <a href="javascript:void(0);" class="usa-identifier__logo">
+                        <img class="usa-identifier__logo-img" src="../../../assets/img/gsa_logo.png"
+                          alt="US General Administration Services Starmark logo" role="img" />
+                      </a>
+                    </div>
+                    <div class="usa-identifier__identity" aria-label="Agency description">
+                      <p class="usa-identifier__identity-domain">
+                        usmcservmart.gsa.gov
+                      </p>
+                      <p class="usa-identifier__identity-disclaimer">
+                        An official website of the
+                        <a href="javascript:void(0);">US General Services Administration</a>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <nav class="usa-identifier__section usa-identifier__section--required-links"
+                  aria-label="Important links,">
+                  <div class="usa-identifier__container">
+                    <ul class="usa-identifier__required-links-list">
+                      <li class="usa-identifier__required-links-item">
+                        <a href="https://www.gsa.gov/about-us" class="usa-identifier__required-link usa-link">About
+                          GSA</a>
+                      </li>
+                      <li class="usa-identifier__required-links-item">
+                        <a href="https://www.gsa.gov/website-information/accessibility-aids"
+                          class="usa-identifier__required-link usa-link">Accessibility support</a>
+                      </li>
+                      <li class="usa-identifier__required-links-item">
+                        <a href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+                          class="usa-identifier__required-link usa-link">FOIA requests</a>
+                      </li>
+                      <li class="usa-identifier__required-links-item">
+                        <a href="https://www.gsa.gov/website-information/website-policies#privacy"
+                          class="usa-identifier__required-link usa-link">Privacy policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <section class="usa-identifier__section usa-identifier__section--usagov"
+                  aria-label="U.S. government information and services,">
+                  <div class="usa-identifier__container">
+                    <div class="usa-identifier__usagov-description">
+                      Looking for U.S. government information and services?
+                    </div>
+                    <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+                  </div>
+                </section>
+              </div>
+
             </app-usmc-content-layout>
             <!---->
           </ng-component>
