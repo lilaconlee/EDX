@@ -1,8 +1,11 @@
 export const SLUGS = [
   "apps_ocfo_gsa",
+  "ask_gsa",
   "computersforlearning",
   "contractdirectory",
   "drivethru_gsa",
+  "gsaxcess",
+  "usmcservmart_gsa",
 ];
 
 export const VIEWS = ["current", "proposed", "diff", "production"];
